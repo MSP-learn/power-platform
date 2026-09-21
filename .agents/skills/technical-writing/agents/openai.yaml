@@ -1,0 +1,4 @@
+interface:
+  display_name: "MSP Technical Writer"
+  short_description: "Design and review reader-centered MSP documentation"
+  default_prompt: "Create or improve this technical documentation for the reader's task, use MSP-compatible UI patterns, and pass the content review gateway."

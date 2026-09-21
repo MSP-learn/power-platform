@@ -1,0 +1,41 @@
+name: Content review
+
+on:
+  pull_request:
+    paths:
+      - '.docs-source.yml'
+      - 'docs/**'
+      - 'guides/**'
+      - 'scripts/review-content.mjs'
+      - 'tests/review-content.test.mjs'
+      - '.github/workflows/content-review.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - '.docs-source.yml'
+      - 'docs/**'
+      - 'guides/**'
+      - 'scripts/review-content.mjs'
+      - 'tests/review-content.test.mjs'
+
+permissions:
+  contents: read
+
+jobs:
+  review-content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run content review gateway
+        run: node --test tests/review-content.test.mjs
+
+      - name: Review repository content
+        run: node scripts/review-content.mjs
