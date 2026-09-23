@@ -1,30 +1,20 @@
 # Source metadata consumed by MSP Portal sync and build scripts.
-# Customize these values for each repository created from this template.
 
-# Stable slug used by the portal for URLs and source identity.
-id: msp-template
-
-# Reader-facing title shown in navigation and source listings.
-name: MSP Template
-
-# Grouping label used by the portal when organizing sources.
-category: Shared Services
-
-# Short summary for source cards, listings, and search context.
+id: power-platform
+name: Power Platform
+category: Power Platform
 description: >
-  Starter structure and contribution guidance for documentation repositories
-  that publish through MSP Portal.
+  Architecture, engineering trade-offs, service selection, governance, and
+  production guidance for Microsoft Power Platform.
 
-# Relative path to the documentation root inside this repository.
 docs_path: docs
 
-# Optional discovery labels. Omit `tags` if you do not need them; the portal treats missing tags as an empty list.
-# Keep them short and lowercase when possible.
 tags:
-  - documentation
-  - template
-  - portal
+  - power-platform
+  - architecture
+  - engineering
+  - low-code
 
-# Section order used by the portal when building navigation.
-# Keep only folders that actually exist in the repository.
+# Published content is intentionally flat. docs/README.md owns the source-level
+# Overview in MSP Portal; supporting overview pages are linked from that page.
 navigation: []

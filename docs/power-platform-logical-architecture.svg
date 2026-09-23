@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">Logical Power Platform architecture</title>
+<desc id="desc">Workload products sit above shared Power Platform capabilities, which connect to external enterprise systems. Governance and lifecycle controls span the workload and shared layers.</desc>
+<style>text{font-family:Arial,sans-serif;fill:#111827}.h{font-size:28px;font-weight:700}.t{font-size:20px}.s{font-size:17px}.box{fill:#fff;stroke:#374151;stroke-width:2}.group{fill:#f8fafc;stroke:#64748b;stroke-width:2}.arrow{stroke:#374151;stroke-width:2.5;fill:none;marker-end:url(#a)}</style>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#374151"/></marker></defs>
+<text x="60" y="55" class="h">Logical service architecture</text>
+<rect x="80" y="90" width="840" height="150" rx="14" class="group"/><text x="110" y="125" class="t">Workload products</text>
+<text x="120" y="180" class="s">Power Apps</text><text x="280" y="180" class="s">Power Automate</text><text x="485" y="180" class="s">Power BI</text><text x="620" y="180" class="s">Power Pages</text><text x="780" y="180" class="s">Copilot Studio</text>
+<rect x="80" y="300" width="840" height="180" rx="14" class="group"/><text x="110" y="335" class="t">Shared platform capabilities</text>
+<text x="120" y="390" class="s">Dataverse</text><text x="280" y="390" class="s">Connectors</text><text x="450" y="390" class="s">Power Fx / AI</text><text x="650" y="390" class="s">Environments</text>
+<text x="120" y="435" class="s">Gateways</text><text x="280" y="435" class="s">Admin / Security</text><text x="500" y="435" class="s">Solutions / ALM</text>
+<rect x="980" y="90" width="170" height="390" rx="14" class="box"/><text x="1065" y="130" text-anchor="middle" class="t">Control plane</text><text x="1065" y="185" text-anchor="middle" class="s">Entra ID</text><text x="1065" y="220" text-anchor="middle" class="s">Governance</text><text x="1065" y="255" text-anchor="middle" class="s">Data policies</text><text x="1065" y="290" text-anchor="middle" class="s">Monitoring</text><text x="1065" y="325" text-anchor="middle" class="s">Audit</text><text x="1065" y="360" text-anchor="middle" class="s">Deployment</text>
+<rect x="210" y="560" width="700" height="120" rx="14" class="group"/><text x="560" y="600" text-anchor="middle" class="t">External and adjacent platforms</text><text x="560" y="640" text-anchor="middle" class="s">Azure · Microsoft 365 · Dynamics 365 · Fabric · SaaS · On-premises</text>
+<path d="M500 240 V300" class="arrow"/><path d="M500 480 V560" class="arrow"/><path d="M980 285 H920" class="arrow"/>
+</svg>
